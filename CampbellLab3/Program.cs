@@ -18,7 +18,7 @@ namespace CampbellLab3
             } while (playAgain == true);
             void decisionMaker(int _userRoll) 
             {
-                if (_userRoll < 1)
+                if (_userRoll < 1 || _userRoll > 100)
                 {
                     Console.WriteLine($"Sorry, your number of {_userRoll} is invalid. Please provide a number between 1-100");
                     playAgain = true;
